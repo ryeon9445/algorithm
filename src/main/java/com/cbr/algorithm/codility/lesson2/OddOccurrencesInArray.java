@@ -1,6 +1,8 @@
 package com.cbr.algorithm.codility.lesson2;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class OddOccurrencesInArray {
 
@@ -13,13 +15,13 @@ public class OddOccurrencesInArray {
         }
 
         Set<Integer> checkNumbers = new HashSet<>();
-        for (int i = 0; i < A.length; i++) {
-            if (checkNumbers.contains(A[i])) {
-                checkNumbers.remove(A[i]);
+        Arrays.stream(A).forEach(number -> {
+            if (checkNumbers.contains(number)) {
+                checkNumbers.remove(number);
             } else {
-                checkNumbers.add(A[i]);
+                checkNumbers.add(number);
             }
-        }
+        });
 
         return checkNumbers.stream().findFirst().orElse(0);
     }
