@@ -1,5 +1,8 @@
 package com.cbr.algorithm.codility.lesson4;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class PermCheck {
 
     /**
@@ -7,12 +10,18 @@ public class PermCheck {
      */
     public static int solution(int[] A) {
         int maxValue = 0;
+        Set<Integer> values = new HashSet<>();
         for (int i = 0; i < A.length; i++) {
+            values.add(A[i]);
             if (A[i] > maxValue) {
                 maxValue = A[i];
             }
         }
 
-        return maxValue == A.length ? 1 : 0;
+        if (maxValue == A.length && values.size() == A.length) {
+            return 1;
+        } else {
+            return 0;
+        }
     }
 }
