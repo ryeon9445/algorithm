@@ -7,6 +7,9 @@ public class PassingCarsTest {
 
     @Test
     public void test() {
+        Assert.assertEquals(6, PassingCars.solution(new int[]{0, 1, 0, 1, 0, 1}));
         Assert.assertEquals(5, PassingCars.solution(new int[]{0, 1, 0, 1, 1}));
+        Assert.assertEquals(0, PassingCars.solution(new int[]{1, 0}));
+        Assert.assertEquals(0, PassingCars.solution(new int[]{0, 0}));
     }
 }
