@@ -23,7 +23,7 @@ public class PassingCars {
             }
         }
 
-        if (Math.abs(sumValue) > 1000000000 ) {
+        if (sumValue > 1000000000 || sumValue < 0) {
             return -1;
         }
 
