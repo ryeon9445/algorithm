@@ -2,6 +2,9 @@ package com.cbr.algorithm.codility.lesson5;
 
 public class GenomicRangeQuery {
 
+    /**
+     * O(N + M)
+     */
     public static int[] solution(String S, int[] P, int[] Q) {
         int[] answer = new int[P.length];
 
