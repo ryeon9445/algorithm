@@ -4,7 +4,9 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class OddOccurrencesInArray {
+public final class OddOccurrencesInArray {
+
+    private OddOccurrencesInArray() {}
 
     /**
      * O(N) or O(N*log(N))

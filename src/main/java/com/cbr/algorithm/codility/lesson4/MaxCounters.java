@@ -1,8 +1,9 @@
 package com.cbr.algorithm.codility.lesson4;
 
-import java.util.Arrays;
+public final class MaxCounters {
 
-public class MaxCounters {
+    private MaxCounters() {
+    }
 
     /**
      * O(N + M)

@@ -1,6 +1,9 @@
 package com.cbr.algorithm.codility.lesson5;
 
-public class PassingCars {
+public final class PassingCars {
+
+    private PassingCars() {
+    }
 
     /**
      * O(N)

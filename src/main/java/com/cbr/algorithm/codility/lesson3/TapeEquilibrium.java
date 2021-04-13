@@ -1,6 +1,8 @@
 package com.cbr.algorithm.codility.lesson3;
 
-public class TapeEquilibrium {
+public final class TapeEquilibrium {
+
+    private TapeEquilibrium() {}
 
     /**
      * O(N)

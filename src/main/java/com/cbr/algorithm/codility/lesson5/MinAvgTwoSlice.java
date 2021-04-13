@@ -1,6 +1,9 @@
 package com.cbr.algorithm.codility.lesson5;
 
-public class MinAvgTwoSlice {
+public final class MinAvgTwoSlice {
+
+    private MinAvgTwoSlice() {
+    }
 
     /**
      * O(N ** 2)

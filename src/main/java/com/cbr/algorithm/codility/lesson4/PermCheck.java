@@ -3,7 +3,10 @@ package com.cbr.algorithm.codility.lesson4;
 import java.util.HashSet;
 import java.util.Set;
 
-public class PermCheck {
+public final class PermCheck {
+
+    private PermCheck() {
+    }
 
     /**
      * O(N) or O(N * log(N))

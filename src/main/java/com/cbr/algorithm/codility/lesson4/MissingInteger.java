@@ -3,7 +3,10 @@ package com.cbr.algorithm.codility.lesson4;
 import java.util.HashSet;
 import java.util.Set;
 
-public class MissingInteger {
+public final class MissingInteger {
+
+    private MissingInteger() {
+    }
 
     /**
      * O(N) or O(N * log(N))

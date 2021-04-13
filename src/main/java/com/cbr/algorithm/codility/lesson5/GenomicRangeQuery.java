@@ -1,6 +1,9 @@
 package com.cbr.algorithm.codility.lesson5;
 
-public class GenomicRangeQuery {
+public final class GenomicRangeQuery {
+
+    private GenomicRangeQuery() {
+    }
 
     /**
      * O(N + M)
